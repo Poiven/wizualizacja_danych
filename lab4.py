@@ -64,11 +64,12 @@ def zadanie5():
         x = [random.randrange(1, 10000) for m in range(n)]
         a.append(x)
     for i in range(n):
-        print(a[i],end="")
+        print(a[i], end="")
         for j in range(n):
             suma += a[i][j]
             suma_wszystkich.append(suma)
         print(f" = {suma}")
+        suma = 0
     return suma_wszystkich
 
 
@@ -77,9 +78,8 @@ def main():
     # zadanie2()
     # zadanie3()
     # piramida()
-    # zadanie5()
-    piramida()
-    print(3//2)
+    zadanie5()
+    # piramida()
 
 if __name__ == '__main__':
     main()
