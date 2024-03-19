@@ -27,32 +27,22 @@ def zadanie2():
             print("A",end="")
         print()
 
-def zadanie3():
-    n = 11
-    while n > 10:
-        n = int(input("podaj liczbe wierszy piramidy z A, ale liczba nie moze byc wieksza od 10"))
-
-    for i in range(1, n+1):
-
-        for j in range(1, i+2):
-            # if i == 0:
-            #     print("A")
-            #     continue
-            print("A", end="")
-        print()
-
-
-def piramida():
-    n = int(input("liczba wierszy: "))
-
-    for i in range(1, n + 1):
-        for space in range(0, (n - i)):
-            print(end="  ")
-
-        for j in range(1,2*i):
-            print("A", end="")
-
-        print()
+def piramida(n):
+    if n < 10 | n < 1:
+        print('zla wartosc n')
+    else:
+        a = 2*n
+        for i in range(n):
+            for j in range(a):
+                if j == a/2:
+                    print("A", end="")
+                elif (j >= a/2 - i) & (j < a/2):
+                    print("A", end='')
+                elif (j > a/2) & (j <= a/2 + i):
+                    print("A", end="")
+                else:
+                    print(" ", end="")
+            print('')
 
 
 def zadanie5():
@@ -76,10 +66,9 @@ def zadanie5():
 def main():
     # zadanie1()
     # zadanie2()
-    # zadanie3()
-    # piramida()
+    # piramida(10)
     zadanie5()
-    # piramida()
+
 
 if __name__ == '__main__':
     main()
