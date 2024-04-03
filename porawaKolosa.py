@@ -10,7 +10,7 @@ def zadanie1():
 def zadanie2(Min, Max, ile):
     try:
         lista = [random.randint(Min, Max) for _ in range(ile)]
-        print(lista)
+        # print(lista)
         slownik = {}
         for i in lista:
             counter = 0
@@ -54,7 +54,7 @@ def zadanie3():
 def zadanie4():
     print("podaj a: ")
     a = abs(int(sys.stdin.readline()))
-    print(a)
+    # print(a)
     print("podaj h: ")
     h = abs(int(sys.stdin.readline()))
     if a == 0 or h == 0:
@@ -65,11 +65,21 @@ def zadanie4():
 
 
 def main():
-    # zadanie1()
-    # print(zadanie2(1,10,10))
-    # print(zadanie3())
-    # print(zadanie4())
-    zadanie4()
+    print("zadanie 1")
+    zadanie1()
+
+    print()
+    print("zadanie 2")
+    print(zadanie2(1,10,10))
+
+    print()
+    print("zadanie 3")
+    print(f"suma z wartości z wierszy i kolumn to: {zadanie3()}")
+
+    print()
+    print("zadanie 4")
+    print(zadanie4())
+
 
 if __name__ == '__main__':
     main()
