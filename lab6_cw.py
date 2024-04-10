@@ -36,7 +36,10 @@ def zadanie5(n):
 def zadanie6():
     tablica = np.array([["t", "o", "k", "b"], ["k", "a", "o", "l"], ["o", "j", "m", "n"],  ["c", "g", "d", "a"]])
     print(tablica)
-
+# wykreslanka = np.zeros((6,6),dtype='str')
+#wykreslanka = np.diag(mrowka)
+#wykreslanka[:,0]=malina
+#wykreslanka[5,::-1]=armata
 
 def zadanie7(n):
     tab = np.zeros((n, n))
@@ -49,9 +52,10 @@ def zadanie7(n):
             tab += np.diag([2 * i for a in range(n)])
         var1 += 1
     print(tab)
+    # tab+= np.diag([2* for _ in range()])
 
 
-def zadanie8(n, kierunek):
+def zadanie8(n, kierunek=0):
     wiersz = n.shape[0]
     kolumna = n.shape[1]
     print(kolumna)
