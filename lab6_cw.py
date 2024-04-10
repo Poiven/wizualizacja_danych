@@ -2,7 +2,7 @@ import numpy as np
 
 
 def zadanie1():
-    a = np.arange(3, 46, 3)
+    a = np.arange(3, 46, 3) # zamiast 46 mozna 3*15+1
     print(a)
 
 
